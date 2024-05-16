@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"strings"
 
-	"dagger.io/dagger"
 	"dagger.io/dagger/dag"
 )
 
@@ -38,7 +37,7 @@ func (hello *Hello) Hello(ctx context.Context,
 	shout bool,
 	// Custom container for running the figlet tool
 	// +optional
-	figletContainer *dagger.Container,
+	figletContainer *Container,
 ) (string, error) {
 	message := fmt.Sprintf("%s, %s!", greeting, name)
 	if shout {
