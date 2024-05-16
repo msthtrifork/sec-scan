@@ -2,23 +2,14 @@ module hello
 
 go 1.21.3
 
-require dagger.io/dagger v0.11.4
-
 require (
-	github.com/99designs/gqlgen v0.17.46 // indirect
-	github.com/Khan/genqlient v0.7.0 // indirect
-	github.com/adrg/xdg v0.4.0 // indirect
-	github.com/go-logr/logr v1.4.1 // indirect
-	github.com/go-logr/stdr v1.2.2 // indirect
-	github.com/google/uuid v1.6.0 // indirect
-	github.com/mitchellh/go-homedir v1.1.0 // indirect
-	github.com/sosodev/duration v1.3.1 // indirect
-	go.opentelemetry.io/otel v1.26.0 // indirect
-	go.opentelemetry.io/otel/metric v1.26.0 // indirect
-	go.opentelemetry.io/otel/trace v1.26.0 // indirect
-	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
-	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
+	github.com/99designs/gqlgen v0.17.31
+	github.com/Khan/genqlient v0.6.0
+	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
+	golang.org/x/sync v0.6.0
 )
 
-require github.com/vektah/gqlparser/v2 v2.5.11 // indirect
+require (
+	github.com/stretchr/testify v1.8.3 // indirect
+	github.com/vektah/gqlparser/v2 v2.5.6
+)

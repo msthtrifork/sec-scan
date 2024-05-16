@@ -5,8 +5,6 @@ import (
 	"context"
 	"fmt"
 	"strings"
-
-	"dagger.io/dagger/dag"
 )
 
 var defaultFigletContainer = dag.
