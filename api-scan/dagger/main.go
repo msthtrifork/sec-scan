@@ -41,7 +41,6 @@ func (t *ApiScan) ApiScan(
 			"-f", format,
 			"-I",
 			"-r", outputPath,
-			"-O", "https://youngmoney.test.internal.andmoney.dk",
 		}).
 		File(outputPath), nil
 }
