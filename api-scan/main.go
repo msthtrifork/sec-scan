@@ -1,22 +1,21 @@
 package main
 
 import (
-	"fmt"
 	"context"
-	"dagger/sec-scan/internal/dagger"
+	"fmt"
 )
 
 type SecScan struct{}
 
 // scan API endpoints for security vulnerabilities
 // send the api specification and a format to the zap-api-scan.py script
-func (t *SecScan) ApiScan(
+func (t *SecScan) Api(
 	ctx context.Context,
-	openapiSpec *dagger.File,
+	openapiSpec *File,
 	// +optional
 	// +default="openapi"
 	format string,
-) (*dagger.File, error) {
+) (*File, error) {
 	openapiSpec.Sync(ctx)
 
 	fileId, err := openapiSpec.ID(ctx)
