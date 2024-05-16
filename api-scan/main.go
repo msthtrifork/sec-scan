@@ -10,7 +10,7 @@ type SecScan struct{}
 
 // scan API endpoints for security vulnerabilities
 // send the api specification and a format to the zap-api-scan.py script
-func (t *SecScan) ScanApi(
+func (t *SecScan) ApiScan(
 	ctx context.Context,
 	openapiSpec *dagger.File,
 	// +optional
