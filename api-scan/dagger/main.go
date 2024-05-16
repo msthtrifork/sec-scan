@@ -5,11 +5,11 @@ import (
 	"fmt"
 )
 
-type SecScan struct{}
+type ApiScan struct{}
 
 // scan API endpoints for security vulnerabilities
 // send the api specification and a format to the zap-api-scan.py script
-func (t *SecScan) ApiScan(
+func (t *ApiScan) ApiScan(
 	ctx context.Context,
 	openapiSpec *File,
 	// +optional
