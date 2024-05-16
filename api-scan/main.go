@@ -3,6 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
+
+	"dagger.io/dagger"
+	"dagger.io/dagger/dag"
 )
 
 type SecScan struct{}
@@ -11,11 +14,11 @@ type SecScan struct{}
 // send the api specification and a format to the zap-api-scan.py script
 func (t *SecScan) Api(
 	ctx context.Context,
-	openapiSpec *File,
+	openapiSpec *dagger.File,
 	// +optional
 	// +default="openapi"
 	format string,
-) (*File, error) {
+) (*dagger.File, error) {
 	openapiSpec.Sync(ctx)
 
 	fileId, err := openapiSpec.ID(ctx)
