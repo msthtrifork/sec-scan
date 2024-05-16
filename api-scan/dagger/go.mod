@@ -1,4 +1,4 @@
-module dagger/test-call
+module dagger/api-scan
 
 go 1.21.7
 

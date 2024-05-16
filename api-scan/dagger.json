@@ -1,5 +1,6 @@
 {
   "name": "api-scan",
   "sdk": "go",
+  "source": "dagger",
   "engineVersion": "v0.11.1"
 }
