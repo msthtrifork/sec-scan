@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"context"
 	"dagger/sec-scan/internal/dagger"
 )
@@ -27,6 +28,8 @@ func (t *SecScan) ScanApi(
 
 	filePath := "/zap/wrk/openapi.json"
 	outputPath := "/zap/wrk/html_report.html"
+
+	fmt.Println("Test")
 
 	return dag.
 		Container().
